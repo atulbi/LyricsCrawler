@@ -1,6 +1,7 @@
 import re
 import urllib.request
 from bs4 import BeautifulSoup
+from raw import *
 
 def parse(artist , song_title):
     artist = artist.lower()
@@ -14,9 +15,11 @@ def parse(artist , song_title):
 
 
 def main():
-    song = input("Enter the song name : ")
+    track = input("Enter the song name : ")
     artist = input("Enter artist name : ")
-    url = parse(artist ,song)
+    details = getjson(track,artist)
+    imglink = details[2]
+    url = parse(details[1] ,details[0])
     content = urllib.request.urlopen(url).read()
     lyrics = find(content)
     print(lyrics)
