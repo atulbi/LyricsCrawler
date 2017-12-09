@@ -14,15 +14,16 @@ def parse(artist , song_title):
     return "http://azlyrics.com/lyrics/"+artist+"/"+song_title+".html"
 
 
-def main():
-    track = input("Enter the song name : ")
-    artist = input("Enter artist name : ")
+def main2(track,artist):
+    #track = input("Enter the song name : ")
+    #artist = input("Enter artist name : ")
     details = getjson(track,artist)
     imglink = details[2]
     url = parse(details[1] ,details[0])
     content = urllib.request.urlopen(url).read()
     lyrics = find(content)
     print(lyrics)
+    return lyrics
 
 def find(content):
     try: 
@@ -41,5 +42,3 @@ def find(content):
         return "Exception Occured : "+'\n'+ str(e)+'\n'
 
 
-if __name__=='__main__':
-    main()
