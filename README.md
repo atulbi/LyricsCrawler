@@ -12,4 +12,5 @@ What's next :
   1. Adding Album cover art in UI
   2. Link with itunes (in Windows)
   3. Improve UX && UI
+  4. Text dialog with Loading Prompt,Enter Prompt 
   
