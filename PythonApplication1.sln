@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "PythonApplication1\PythonApplication1.pyproj", "{C1DAB1A5-A9D9-4078-90B6-6E4DD63FA123}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "LyricsCrawler", "PythonApplication1\LyricsCrawler.pyproj", "{C1DAB1A5-A9D9-4078-90B6-6E4DD63FA123}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
